@@ -1,4 +1,4 @@
-// File: C:\vs code\nextjs\pratice with thapa\moviesflix\src\app\page.js
+// File: C:\vs code\nextjs\temp\src\app\page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
