@@ -4,8 +4,8 @@ import React from 'react'
 import Moviecard from '../components/Moviecard';
 
 const page = async () => {
-  // const url = process.env.RAPID_KEY;
-  const url = 'https://netflix54.p.rapidapi.com/search/?query=stranger&offset=0&limit_titles=50&limit_suggestions=20&lang=en';
+   const url = process.env.RAPID_KEY;
+  // const url = 'https://netflix54.p.rapidapi.com/search/?query=stranger&offset=0&limit_titles=50&limit_suggestions=20&lang=en';
 
   const options = {
     method: 'GET',
