@@ -4,7 +4,7 @@ import React from 'react'
 import Moviecard from '../components/Moviecard';
 
 const page = async () => {
-  // const url = process.env.RAPID_KEY;
+ 
   const url = 'https://netflix54.p.rapidapi.com/search/?query=stranger&offset=0&limit_titles=50&limit_suggestions=20&lang=en';
 
   const options = {
@@ -19,7 +19,7 @@ const page = async () => {
   const data = await res.json();
   const maindata = data.titles;
 
-  console.log(data);
+  console.log(maindata);
   return (
     <>
       <h1 className='text-center font-bold mt-5 font-serif text-3xl '>Series and Movie</h1>

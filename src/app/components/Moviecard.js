@@ -4,7 +4,7 @@ import React from 'react'
 
 const Moviecard = (curElem) => {
 
-    const {id, title,type, synopsis} = curElem.jawSummary;
+  const {id, title,type, synopsis} = curElem.jawSummary;
     
   return (
     <>

@@ -1,7 +1,8 @@
 import mongoose from "mongoose"
 
 // const MONGODB_URL = process.env.MONGODB_URL;
-const MONGODB_URL= "mongodb+srv://Nishant591:cwXIGYr1bkDayPRH@cluster0.pmowbfk.mongodb.net/userdata?retryWrites=true&w=majority"
+const MONGODB_URL= "mongodb+srv://nishantbhandari218:mfygLIenFqBDxwCE@cluster0.dp3kwr5.mongodb.net/userdata?retryWrites=true&w=majority"
+
 
 if (!MONGODB_URL) {
     throw new Error(
@@ -23,7 +24,7 @@ const dbConnect = async () => {
 // If a connection does not exist, we check if a promise is already in progress. If a promise is already in progress, we wait for it to resolve to get the connection
     if (!cached.promise) {
         const opts = {
-            bufferCommands : false
+            bufferCommands : false,      
         };
         
         cached.promise = mongoose.connect(MONGODB_URL, opts).then((mongoose) => {
